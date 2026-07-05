@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+ <div class="app">
+    <div id="home-page" class="page-view active-page">
+        <div class="clouds-container">
+            <div class="cloud cloud-1"></div>
+            <div class="cloud cloud-2"></div>
+            <div class="cloud cloud-3"></div>
+            <div class="cloud cloud-4"></div>
+            <div class="cloud cloud-5"></div>
+            <div class="cloud cloud-6"></div>
+            <div class="cloud cloud-7"></div>
+            <div class="cloud cloud-8"></div>
+            <div class="cloud cloud-9"></div>
+            <div class="cloud cloud-10"></div>
+            <div class="cloud cloud-11"></div>
+            <div class="cloud cloud-12"></div>
+        </div>
+
+            <div class="searchBox">
+            <input class="searchInput" type="text" placeholder="Search">
+            <button class="searchButton">
+                <svg class="searchSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M23.7953 23.9182L19.0585 19.1814M19.0585 19.1814C20.9144 17.3255 22.0588 14.7961 22.0588 12.0001C22.0588 6.47721 17.5817 2.00006 12.0588 2.00006C6.53597 2.00006 2.05884 6.47721 2.05884 12.0001C2.05884 17.5229 6.53597 22.0001 12.0588 22.0001C14.8548 22.0001 17.3842 20.8557 19.0585 19.1814Z" stroke="#aaa" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </button>
+        </div>
+
+        <datalist id="city-list">
+            <option value="Austin"></option><option value="Dallas"></option>
+        </datalist>
+
+        <div id="weather-display">
+            <i class="fa-solid fa-cloud weather-icon hide-icon"></i>
+            <h1 id="city">Loading...</h1>
+            <h2 id="temp">--°F</h2>
+            <p id="desc">Waiting for input</p>
+        </div>
+    </div> <div id="map-page" class="page-view">
+        <div class="page-header">
+            <h1>Radar Map</h1>
+            <p>Live weather tracking map coming soon...</p>
+        </div>
+    </div>
+
+    <div id="location-page" class="page-view">
+        <div class="page-header">
+            <h1>Saved Locations</h1>
+            <p>Your pinned cities will appear here...</p>
+        </div>
+    </div>
+
+    <div class="main-nav-container">
+        <button type="button" class="button">
+            <div class="button-top">
+                <i class="fa-solid fa-house"></i>
+            </div>
+            <div class="button-bottom"></div>
+            <div class="button-base"></div>
+        </button>
+
+        <button type="button" class="button">
+            <div class="button-top">
+                <i class="fa-solid fa-map"></i>
+            </div>
+            <div class="button-bottom"></div>
+            <div class="button-base"></div>
+        </button>
+
+        <button type="button" class="button">
+            <div class="button-top">
+                <i class="fa-solid fa-location-dot"></i> 
+            </div>
+            <div class="button-bottom"></div>
+            <div class="button-base"></div>
+        </button>
+    </div>
+</div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
